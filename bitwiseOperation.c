@@ -22,6 +22,8 @@ int main(){
 			for(int j=i;j<n-1;j++)
 			{
 				int temp=((arr[i]&arr[j+1])^(arr[i]|arr[j+1]));
+				printf("%d,%d,(&=%d),(|=%d),(&^|=%d)\t and %d = \n",arr[i],arr[j+1],(arr[i]&arr[j+1]),arr[i]|arr[j+1],(arr[i]&arr[j+1])^(arr[i]|arr[j+1]),arr[i]^arr[j+1]);
+
 				if(temp<min)
 					min=temp;
 			}
